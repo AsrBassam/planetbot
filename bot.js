@@ -47,7 +47,7 @@ client.on('message', message => {
       message.channel.send(` ☑ Client Activity Now Is : \`Listening ${argresult} \` `)
   } else 
   if (message.content.startsWith(admin + 'setstream')) {
-    client.user.setGame(argresult, "https://www.twitch.tv/idk");
+    client.user.setGame(argresult, "https://www.twitch.tv/red");
      message.channel.send(` ☑ Client Activity Now Is : \`Streaming ${argresult} \` `)
   }
   if (message.content.startsWith(admin + 'setname')) {
@@ -106,17 +106,6 @@ client.users.forEach(m =>{
 
 
 
-client.on('message', message => {
-        if (message.content.toLowerCase() === prefix + "inv") {
-            if(!message.channel.guild) return;
-        let embed = new Discord.RichEmbed()
-        .setTitle(`:small_orange_diamond: Click Here To Invite Planet. `)
-        .setURL(`https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&scope=bot&permissions=8`)
-     message.channel.sendEmbed(embed);
-       }
-   });
-   
-
 
 client.on('message', message => {
     if (!developers.includes(message.author.id)) return;
@@ -163,7 +152,7 @@ message.channel.send({embed:embed}).then(message => message.delete(5000));
      const embed = new Discord.RichEmbed()
          .setColor('#36393e')
          .setTitle('Click To Join Support Server')
-         .setURL('https://discord.gg/PYqcDqd')
+         .setURL('https://discord.gg/dhDp5Cf')
          .setDescription(`
          \`\`\`Main Commands  :\`\`\`         
          
@@ -909,7 +898,7 @@ const ee =new Discord.RichEmbed()
                 .setColor('BLACK')
                  message.channel.send(e)
             } else {
-                message.reply(`يجب عليك كتابة اسم الرتبة`);
+                message.reply(`RED Army`);
             } 
         }
  else if(args[0] == 'all') {
