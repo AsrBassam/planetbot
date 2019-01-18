@@ -1347,4 +1347,4 @@ client.on('roleCreate', role => {
   }, 1000);
 });
 
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.TOKEN);
